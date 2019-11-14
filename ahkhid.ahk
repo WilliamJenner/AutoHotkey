@@ -125,16 +125,12 @@ Scroll:
 
 ; Zoom up
 012D020000010000:
-ScrollDirection := 1
-GoSub Scroll
-SetTimer, Scroll, 20
+Send {Media_Next}
 return
 
 ; Zoom down
 012E020000010000:
-ScrollDirection := 2
-GoSub Scroll
-SetTimer, Scroll, 20
+Send {Media_Prev}
 return
 
 ; --- Number pad keys ---
