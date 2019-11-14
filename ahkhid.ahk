@@ -125,12 +125,12 @@ Scroll:
 
 ; Zoom up
 012D020000010000:
-Send {Media_Next}
+Send, {Media_Next}
 return
 
 ; Zoom down
 012E020000010000:
-Send {Media_Prev}
+Send, {Media_Prev}
 return
 
 ; --- Number pad keys ---
@@ -152,32 +152,38 @@ return
 
 ; --- Favorite keys ---
 
-/*
+
 ; My Favorites
 0182010000000000:
 0182010000010000:
+MsgBox Favourite Favourite
 return
 ; Favorites 1
 0100000000040000:
 0100000000050000:
+MsgBox Favourites 1
 return
 ; Favorites 2
 0100000000080000:
 0100000000090000:
+MsgBox Favourites 2
 return
 ; Favorites 3
 0100000000100000:
 0100000000110000:
+MsgBox Favourites 3
 return
 ; Favorites 4
 0100000000200000:
 0100000000210000:
+MsgBox Favourites 4
 return
 ; Favorites 5
 0100000000400000:
 0100000000410000:
+Send, Brew?
 return
-*/
+
 
 ; --- F-keys ---
 
